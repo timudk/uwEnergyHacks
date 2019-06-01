@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		151C167322A2E43100396067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C167222A2E43100396067 /* AppDelegate.swift */; };
+		151C167522A2E43100396067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C167422A2E43100396067 /* ViewController.swift */; };
+		151C167822A2E43100396067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151C167622A2E43100396067 /* Main.storyboard */; };
+		151C167A22A2E43300396067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151C167922A2E43300396067 /* Assets.xcassets */; };
+		151C167D22A2E43300396067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151C167B22A2E43300396067 /* LaunchScreen.storyboard */; };
+		151C168822A2E43300396067 /* FelixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C168722A2E43300396067 /* FelixTests.swift */; };
+		151C169322A2E43300396067 /* FelixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151C169222A2E43300396067 /* FelixUITests.swift */; };
+		24C17D2810458C1C472856C2 /* Pods_FelixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7E18B88242CF39A787C447 /* Pods_FelixUITests.framework */; };
+		58A94F5766B4BEBAC8CA4689 /* Pods_Felix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0A86471544C1F788682FE6 /* Pods_Felix.framework */; };
+		C6C9DF63102EB450C42072C6 /* Pods_FelixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C66864884399710EA730F3 /* Pods_FelixTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		151C168422A2E43300396067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151C166722A2E43100396067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151C166E22A2E43100396067;
+			remoteInfo = Felix;
+		};
+		151C168F22A2E43300396067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151C166722A2E43100396067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151C166E22A2E43100396067;
+			remoteInfo = Felix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BA85EF5C9C4984681F404E6 /* Pods-Felix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Felix.debug.xcconfig"; path = "Target Support Files/Pods-Felix/Pods-Felix.debug.xcconfig"; sourceTree = "<group>"; };
+		151C166F22A2E43100396067 /* Felix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		151C167222A2E43100396067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		151C167422A2E43100396067 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		151C167722A2E43100396067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		151C167922A2E43300396067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		151C167C22A2E43300396067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		151C167E22A2E43300396067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151C168322A2E43300396067 /* FelixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FelixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		151C168722A2E43300396067 /* FelixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelixTests.swift; sourceTree = "<group>"; };
+		151C168922A2E43300396067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151C168E22A2E43300396067 /* FelixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FelixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		151C169222A2E43300396067 /* FelixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FelixUITests.swift; sourceTree = "<group>"; };
+		151C169422A2E43300396067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25E551778E8E7645367C26CA /* Pods-FelixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTests.debug.xcconfig"; path = "Target Support Files/Pods-FelixTests/Pods-FelixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F7E18B88242CF39A787C447 /* Pods_FelixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FelixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		615C7F430CCF1A6DEFA80CA5 /* Pods-Felix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Felix.release.xcconfig"; path = "Target Support Files/Pods-Felix/Pods-Felix.release.xcconfig"; sourceTree = "<group>"; };
+		6903DE0C68474B693A364E30 /* Pods-FelixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTests.release.xcconfig"; path = "Target Support Files/Pods-FelixTests/Pods-FelixTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B0A86471544C1F788682FE6 /* Pods_Felix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Felix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1E49DA1D04BAC1B031B942 /* Pods-FelixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixUITests.release.xcconfig"; path = "Target Support Files/Pods-FelixUITests/Pods-FelixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87616271024ECAD677D1CD3C /* Pods-FelixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixUITests.debug.xcconfig"; path = "Target Support Files/Pods-FelixUITests/Pods-FelixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1C66864884399710EA730F3 /* Pods_FelixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FelixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		151C166C22A2E43100396067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A94F5766B4BEBAC8CA4689 /* Pods_Felix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C168022A2E43300396067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C9DF63102EB450C42072C6 /* Pods_FelixTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C168B22A2E43300396067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C17D2810458C1C472856C2 /* Pods_FelixUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		151C166622A2E43100396067 = {
+			isa = PBXGroup;
+			children = (
+				151C167122A2E43100396067 /* Felix */,
+				151C168622A2E43300396067 /* FelixTests */,
+				151C169122A2E43300396067 /* FelixUITests */,
+				151C167022A2E43100396067 /* Products */,
+				F0553B92CC0C67BE23137F9B /* Pods */,
+				E1216B15635CE7521778F7A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		151C167022A2E43100396067 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				151C166F22A2E43100396067 /* Felix.app */,
+				151C168322A2E43300396067 /* FelixTests.xctest */,
+				151C168E22A2E43300396067 /* FelixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		151C167122A2E43100396067 /* Felix */ = {
+			isa = PBXGroup;
+			children = (
+				151C167222A2E43100396067 /* AppDelegate.swift */,
+				151C167422A2E43100396067 /* ViewController.swift */,
+				151C167622A2E43100396067 /* Main.storyboard */,
+				151C167922A2E43300396067 /* Assets.xcassets */,
+				151C167B22A2E43300396067 /* LaunchScreen.storyboard */,
+				151C167E22A2E43300396067 /* Info.plist */,
+			);
+			path = Felix;
+			sourceTree = "<group>";
+		};
+		151C168622A2E43300396067 /* FelixTests */ = {
+			isa = PBXGroup;
+			children = (
+				151C168722A2E43300396067 /* FelixTests.swift */,
+				151C168922A2E43300396067 /* Info.plist */,
+			);
+			path = FelixTests;
+			sourceTree = "<group>";
+		};
+		151C169122A2E43300396067 /* FelixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				151C169222A2E43300396067 /* FelixUITests.swift */,
+				151C169422A2E43300396067 /* Info.plist */,
+			);
+			path = FelixUITests;
+			sourceTree = "<group>";
+		};
+		E1216B15635CE7521778F7A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B0A86471544C1F788682FE6 /* Pods_Felix.framework */,
+				D1C66864884399710EA730F3 /* Pods_FelixTests.framework */,
+				4F7E18B88242CF39A787C447 /* Pods_FelixUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0553B92CC0C67BE23137F9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BA85EF5C9C4984681F404E6 /* Pods-Felix.debug.xcconfig */,
+				615C7F430CCF1A6DEFA80CA5 /* Pods-Felix.release.xcconfig */,
+				25E551778E8E7645367C26CA /* Pods-FelixTests.debug.xcconfig */,
+				6903DE0C68474B693A364E30 /* Pods-FelixTests.release.xcconfig */,
+				87616271024ECAD677D1CD3C /* Pods-FelixUITests.debug.xcconfig */,
+				6E1E49DA1D04BAC1B031B942 /* Pods-FelixUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		151C166E22A2E43100396067 /* Felix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151C169722A2E43300396067 /* Build configuration list for PBXNativeTarget "Felix" */;
+			buildPhases = (
+				6678687B00E88567175E1D55 /* [CP] Check Pods Manifest.lock */,
+				151C166B22A2E43100396067 /* Sources */,
+				151C166C22A2E43100396067 /* Frameworks */,
+				151C166D22A2E43100396067 /* Resources */,
+				795060AC51CC17597D6F77C6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Felix;
+			productName = Felix;
+			productReference = 151C166F22A2E43100396067 /* Felix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		151C168222A2E43300396067 /* FelixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151C169A22A2E43300396067 /* Build configuration list for PBXNativeTarget "FelixTests" */;
+			buildPhases = (
+				21897B8BEDD7BB6C4B3EA0B1 /* [CP] Check Pods Manifest.lock */,
+				151C167F22A2E43300396067 /* Sources */,
+				151C168022A2E43300396067 /* Frameworks */,
+				151C168122A2E43300396067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				151C168522A2E43300396067 /* PBXTargetDependency */,
+			);
+			name = FelixTests;
+			productName = FelixTests;
+			productReference = 151C168322A2E43300396067 /* FelixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		151C168D22A2E43300396067 /* FelixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 151C169D22A2E43300396067 /* Build configuration list for PBXNativeTarget "FelixUITests" */;
+			buildPhases = (
+				8F4EA89D0A0ED42CB3E8C3F8 /* [CP] Check Pods Manifest.lock */,
+				151C168A22A2E43300396067 /* Sources */,
+				151C168B22A2E43300396067 /* Frameworks */,
+				151C168C22A2E43300396067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				151C169022A2E43300396067 /* PBXTargetDependency */,
+			);
+			name = FelixUITests;
+			productName = FelixUITests;
+			productReference = 151C168E22A2E43300396067 /* FelixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		151C166722A2E43100396067 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "James Dorfman";
+				TargetAttributes = {
+					151C166E22A2E43100396067 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					151C168222A2E43300396067 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 151C166E22A2E43100396067;
+					};
+					151C168D22A2E43300396067 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 151C166E22A2E43100396067;
+					};
+				};
+			};
+			buildConfigurationList = 151C166A22A2E43100396067 /* Build configuration list for PBXProject "Felix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 151C166622A2E43100396067;
+			productRefGroup = 151C167022A2E43100396067 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				151C166E22A2E43100396067 /* Felix */,
+				151C168222A2E43300396067 /* FelixTests */,
+				151C168D22A2E43300396067 /* FelixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		151C166D22A2E43100396067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C167D22A2E43300396067 /* LaunchScreen.storyboard in Resources */,
+				151C167A22A2E43300396067 /* Assets.xcassets in Resources */,
+				151C167822A2E43100396067 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C168122A2E43300396067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C168C22A2E43300396067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21897B8BEDD7BB6C4B3EA0B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FelixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6678687B00E88567175E1D55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Felix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		795060AC51CC17597D6F77C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Felix/Pods-Felix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Felix/Pods-Felix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Felix/Pods-Felix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F4EA89D0A0ED42CB3E8C3F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FelixUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		151C166B22A2E43100396067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C167522A2E43100396067 /* ViewController.swift in Sources */,
+				151C167322A2E43100396067 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C167F22A2E43300396067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C168822A2E43300396067 /* FelixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		151C168A22A2E43300396067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151C169322A2E43300396067 /* FelixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		151C168522A2E43300396067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 151C166E22A2E43100396067 /* Felix */;
+			targetProxy = 151C168422A2E43300396067 /* PBXContainerItemProxy */;
+		};
+		151C169022A2E43300396067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 151C166E22A2E43100396067 /* Felix */;
+			targetProxy = 151C168F22A2E43300396067 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		151C167622A2E43100396067 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				151C167722A2E43100396067 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		151C167B22A2E43300396067 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				151C167C22A2E43300396067 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		151C169522A2E43300396067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		151C169622A2E43300396067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		151C169822A2E43300396067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA85EF5C9C4984681F404E6 /* Pods-Felix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQF8VLWZJS;
+				INFOPLIST_FILE = Felix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesdorfman.felix.Felix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		151C169922A2E43300396067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615C7F430CCF1A6DEFA80CA5 /* Pods-Felix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQF8VLWZJS;
+				INFOPLIST_FILE = Felix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesdorfman.felix.Felix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		151C169B22A2E43300396067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E551778E8E7645367C26CA /* Pods-FelixTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQF8VLWZJS;
+				INFOPLIST_FILE = FelixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesdorfman.felix.FelixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Felix.app/Felix";
+			};
+			name = Debug;
+		};
+		151C169C22A2E43300396067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6903DE0C68474B693A364E30 /* Pods-FelixTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQF8VLWZJS;
+				INFOPLIST_FILE = FelixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesdorfman.felix.FelixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Felix.app/Felix";
+			};
+			name = Release;
+		};
+		151C169E22A2E43300396067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87616271024ECAD677D1CD3C /* Pods-FelixUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQF8VLWZJS;
+				INFOPLIST_FILE = FelixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesdorfman.felix.FelixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Felix;
+			};
+			name = Debug;
+		};
+		151C169F22A2E43300396067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1E49DA1D04BAC1B031B942 /* Pods-FelixUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQF8VLWZJS;
+				INFOPLIST_FILE = FelixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesdorfman.felix.FelixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Felix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		151C166A22A2E43100396067 /* Build configuration list for PBXProject "Felix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151C169522A2E43300396067 /* Debug */,
+				151C169622A2E43300396067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151C169722A2E43300396067 /* Build configuration list for PBXNativeTarget "Felix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151C169822A2E43300396067 /* Debug */,
+				151C169922A2E43300396067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151C169A22A2E43300396067 /* Build configuration list for PBXNativeTarget "FelixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151C169B22A2E43300396067 /* Debug */,
+				151C169C22A2E43300396067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		151C169D22A2E43300396067 /* Build configuration list for PBXNativeTarget "FelixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				151C169E22A2E43300396067 /* Debug */,
+				151C169F22A2E43300396067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 151C166722A2E43100396067 /* Project object */;
+}
