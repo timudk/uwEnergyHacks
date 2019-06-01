@@ -1,6 +1,7 @@
 import numpy as np 
 import matplotlib.pyplot as plt
 import pickle
+import math
 
 def compute_nx_ny(k):
 	n_x = k%4
@@ -20,14 +21,17 @@ def read_data(filename):
 def compute_24_hours_matrix(outside_temp, data, frames_per_min):
 	time_range = 24*frames_per_min
 
-	temperatures = np.zeros((time_range, 5, 6))
+	temperatures = np.ones((time_range, 5, 6))
 
 	current_time = 0.0
 	for i in range(time_range):
+		temperatures[i].fill(outside_temp[math.floor(current_time)])
 		current_time = 24*(i/time_range)
 		for j in range(16): 
 			avg = compute_average_in_office(current_time, data[j][0])
-
+			if np.isnan(avg):
+				avg = outside_temp[math.floor(current_time)]
+			print(avg)
 			num_x, num_y = compute_nx_ny(j)
 			temperatures[i, num_x, num_y] = avg
 
@@ -67,7 +71,8 @@ def main():
 	temp = compute_24_hours_matrix(outside_temp, data, N_FRAMES_PER_MINUTE)
 
 	for i in range(24):
-		plt.imshow(temp[i], cmap=plt.cm.RdBu)
+		plt.imshow(temp[i], cmap=plt.cm.RdBu, interpolation='nearest')
+		plt.axis('off')
 		plt.show()
 
 if __name__ == '__main__':
