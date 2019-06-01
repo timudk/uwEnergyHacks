@@ -1,0 +1,1371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		DC460828FF0F2F76C86CA020169EDB5F /* SnapSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 41AC1E1DC01F7953D1864623DA374C21 /* Build configuration list for PBXAggregateTarget "SnapSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+				65CE75C7216F7C33841114D1BB7C211B /* PBXTargetDependency */,
+				8C517F5BB22D75717A8DB649D45F66C5 /* PBXTargetDependency */,
+			);
+			name = SnapSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00AA85BC2E2372A7838E6A0969B107D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		08B1F50074F67C37FA3D0952DF330F0D /* PINDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6BCD2CF6B6B6FB27F7ADA7D71B8484 /* PINDiskCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		09F6E5D26BAF33560E21029A5E5CAA2E /* PINOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3159EDC867085FA3D704A375B017CF8D /* PINOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F33A622106DCD1F84FF2B85C79F8AA3 /* PINOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 40054B42DA3AB3572C075056AE505917 /* PINOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1205F56794731BF11A01984CBAFF03D5 /* PINDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7556C117825C34F16F0C2BB5193952 /* PINDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		150369D1E4EA1AE9BCC312474BC2F0F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2CB46BBA128F5418A4CD47EF2B83F39F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3297149361F418E098B73CE73A6BE254 /* Pods-FelixTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 649EBDA35B3308E71AC3C72F7F5B4D4E /* Pods-FelixTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33F1AB231EF66445FAF4C2AFB6159556 /* PINOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE84EFF558CD36182669DCF5CD50186 /* PINOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E768A095E7EE54F9C5F88B326DABD8F /* PINOperation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FEED927FB7B855AFE50D025E8EC675 /* PINOperation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4549E8104234685CE113A2D556B79A33 /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE049E6A3A1EA913BDCB7AFCF7BA7FA /* PINCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		518F4304F6A814B20B5A0DA861E7F00C /* Pods-FelixUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E380F7082FFD8B4EB6B3BE6DDF0E846D /* Pods-FelixUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AF5461F319E4974659915D8D1B95FA6 /* Pods-Felix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6429A7F2BDEEEA5AE5F9D7FB9302427 /* Pods-Felix-dummy.m */; };
+		6B9FD8D84003C553547F3AA49C76B764 /* Pods-FelixTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4212DB7DAD50DBA2D7A7C7E02EC26A76 /* Pods-FelixTests-dummy.m */; };
+		70541688A5DCF8322045C76978AA22C6 /* PINCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DD164DEF8093D2C83FEA810413B063 /* PINCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		891F50F07D17D9243C32CDC1C005E7CC /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C282EA6F5D40817DCB9789C095D6254D /* PINOperationGroup.m */; };
+		98FAB8880262197ED92BEB7CA98859A4 /* PINOperation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 438D1DFCFE759848FF950155B66C3AF6 /* PINOperation-dummy.m */; };
+		9C7A63006F77669CB60CC54030636F4D /* Pods-FelixUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58514D0C4C33DC72E5987EAC5F4AD0E1 /* Pods-FelixUITests-dummy.m */; };
+		A5A1AF7C0E3004080232CA69046801C5 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A287852B673123907688C994F104B /* PINOperationQueue.m */; };
+		BDB07207A7C7FA716C3F8CBE8724D030 /* Nullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B06CF61955517A827030699B02D5075 /* Nullability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C432E9D2B8B0B47480B1CA4A92EF49BC /* PINOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = E063E5A71E48AD664FC0DD0FDF23CC26 /* PINOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9860A9B8847CB2E32913B53ED7C9BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D5422C511FA396C77C6BFA58AC5B3F9A /* PINCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B3BD7024C61D9E5B183ADE992A4C524F /* PINCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8AE44F6141E17A59458A48BC6D3D445 /* PINCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BD224188DBB96940F34B894740797F /* PINCache-dummy.m */; };
+		D9ABD7194442C3F29B832059F84E78C2 /* PINCacheObjectSubscripting.h in Headers */ = {isa = PBXBuildFile; fileRef = D14EBD1A8E34912930ECF91AAB59B311 /* PINCacheObjectSubscripting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0635A3A1DA3DEFF04BDD48877ADF7B4 /* PINOperationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1316940C4D3817355C4DB7D09795F3F5 /* PINOperationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E202950DB8E545C4B3FDC710D311C1F5 /* PINMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3701F83D359B103C76481D1BB3888EDA /* PINMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E41F0B3B5451072B60965A4F723387EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EB8E53A4766CD7934C16B7166E8E0652 /* Pods-Felix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E362C02277F8521455DA4159EF4BA01 /* Pods-Felix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F116B79370F076FBAACFFF40101E37E9 /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 86604EA57C66E61E48BFCE8BFE7A37F4 /* PINMemoryCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		446093E95CD7BF97D23080B78AEBB92A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A927C3CD51C30012080D6CA07959B246;
+			remoteInfo = PINCache;
+		};
+		4BE92B6036C3BC557D68A4927F55A86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A927C3CD51C30012080D6CA07959B246;
+			remoteInfo = PINCache;
+		};
+		4CD86037658DBF02D066237BBACD46E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CA2A91E06CB572138756573613E9BCB;
+			remoteInfo = "Pods-Felix";
+		};
+		A6882DC4CAD7F166DA2C61C65EB7D184 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57310B016450E63387C9D64F4933E995;
+			remoteInfo = PINOperation;
+		};
+		DFDB35E32FDCECFD6DEA6B35EBEE429E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57310B016450E63387C9D64F4933E995;
+			remoteInfo = PINOperation;
+		};
+		FB27C00C8672C502DD40CC41AF2BDE37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC460828FF0F2F76C86CA020169EDB5F;
+			remoteInfo = SnapSDK;
+		};
+		FFE79DD7765C7E8AD2583F7D05908B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CA2A91E06CB572138756573613E9BCB;
+			remoteInfo = "Pods-Felix";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013904782702BA1E99466AA2C039C4B5 /* Pods-Felix-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Felix-frameworks.sh"; sourceTree = "<group>"; };
+		08832A259BE71A5DF492546A2B386BAB /* Pods-FelixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FelixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1316940C4D3817355C4DB7D09795F3F5 /* PINOperationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperationMacros.h; path = Source/PINOperationMacros.h; sourceTree = "<group>"; };
+		22C347595B1851A1E5B0A3762BB18EC9 /* PINOperation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PINOperation.framework; path = PINOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B7265DB30896A7BC5F148EF235BB92 /* Pods-Felix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Felix.release.xcconfig"; sourceTree = "<group>"; };
+		290A7DE74F1BFF84438A2DCCE8A6AC65 /* SnapSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapSDK.xcconfig; sourceTree = "<group>"; };
+		304401FB2507959BCCABA6793D302A7E /* Pods-Felix-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Felix-Info.plist"; sourceTree = "<group>"; };
+		3159EDC867085FA3D704A375B017CF8D /* PINOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperation.h; path = Source/PINOperation.h; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3251A27DDD0C06C1CF8487F5DF1902F5 /* Pods-FelixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FelixTests.release.xcconfig"; sourceTree = "<group>"; };
+		329AA5A88D166454A201A11496BE6DF7 /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		339FFF06812CBFD296106D1220E78C1F /* PINOperation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINOperation.xcconfig; sourceTree = "<group>"; };
+		3701F83D359B103C76481D1BB3888EDA /* PINMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINMemoryCache.h; path = PINCache/PINMemoryCache.h; sourceTree = "<group>"; };
+		372A287852B673123907688C994F104B /* PINOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINOperationQueue.m; path = Source/PINOperationQueue.m; sourceTree = "<group>"; };
+		37AF4206C9B4C95863AEB434623E665E /* PINCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PINCache.modulemap; sourceTree = "<group>"; };
+		3A78A0A216A42B8288BCD8757AC90BE6 /* Pods-FelixTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FelixTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AE049E6A3A1EA913BDCB7AFCF7BA7FA /* PINCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINCache.m; path = PINCache/PINCache.m; sourceTree = "<group>"; };
+		40054B42DA3AB3572C075056AE505917 /* PINOperationGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperationGroup.h; path = Source/PINOperationGroup.h; sourceTree = "<group>"; };
+		40DD164DEF8093D2C83FEA810413B063 /* PINCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINCache-umbrella.h"; sourceTree = "<group>"; };
+		4212DB7DAD50DBA2D7A7C7E02EC26A76 /* Pods-FelixTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FelixTests-dummy.m"; sourceTree = "<group>"; };
+		438D1DFCFE759848FF950155B66C3AF6 /* PINOperation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINOperation-dummy.m"; sourceTree = "<group>"; };
+		4B02915FB7EEC498D5EC8F6F18EC633E /* Pods-Felix-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Felix-acknowledgements.plist"; sourceTree = "<group>"; };
+		4B06CF61955517A827030699B02D5075 /* Nullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nullability.h; path = PINCache/Nullability.h; sourceTree = "<group>"; };
+		50D4311BDF496C2CDA34D78A4CD06AAB /* PINCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINCache.xcconfig; sourceTree = "<group>"; };
+		557B65404A074C22607FBF46D04F539D /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
+		58514D0C4C33DC72E5987EAC5F4AD0E1 /* Pods-FelixUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FelixUITests-dummy.m"; sourceTree = "<group>"; };
+		5B28AA5E4608637EBBD842DA633E721A /* Pods-FelixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FelixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E362C02277F8521455DA4159EF4BA01 /* Pods-Felix-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Felix-umbrella.h"; sourceTree = "<group>"; };
+		6320170E5A5A268B11CAE15D4EF6A9E3 /* PINCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PINCache.framework; path = PINCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		649EBDA35B3308E71AC3C72F7F5B4D4E /* Pods-FelixTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FelixTests-umbrella.h"; sourceTree = "<group>"; };
+		6F21F76CBF273D74A8121287B17E9816 /* Pods_Felix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Felix.framework; path = "Pods-Felix.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754692546C34D87263AD935D63E0A6CA /* Pods-FelixTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FelixTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		77B147796CDACBECD4F592A63670D1A5 /* PINCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINCache-prefix.pch"; sourceTree = "<group>"; };
+		7B6BCD2CF6B6B6FB27F7ADA7D71B8484 /* PINDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINDiskCache.m; path = PINCache/PINDiskCache.m; sourceTree = "<group>"; };
+		86604EA57C66E61E48BFCE8BFE7A37F4 /* PINMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINMemoryCache.m; path = PINCache/PINMemoryCache.m; sourceTree = "<group>"; };
+		896B6CF32E0369FE9EBE8177F510F9C2 /* Pods-Felix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Felix.modulemap"; sourceTree = "<group>"; };
+		8BE84EFF558CD36182669DCF5CD50186 /* PINOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperationQueue.h; path = Source/PINOperationQueue.h; sourceTree = "<group>"; };
+		954BE2DCD6153F28AD6736E929F384E0 /* Pods-Felix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Felix.debug.xcconfig"; sourceTree = "<group>"; };
+		95FEED927FB7B855AFE50D025E8EC675 /* PINOperation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINOperation-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E5CD3FDFF797E5B15DA559027D0FB73 /* PINOperation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINOperation-prefix.pch"; sourceTree = "<group>"; };
+		A6429A7F2BDEEEA5AE5F9D7FB9302427 /* Pods-Felix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Felix-dummy.m"; sourceTree = "<group>"; };
+		AF584D6CAF2F7A349F3D8C7616C2864A /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKLoginKit.framework; sourceTree = "<group>"; };
+		AF7556C117825C34F16F0C2BB5193952 /* PINDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINDiskCache.h; path = PINCache/PINDiskCache.h; sourceTree = "<group>"; };
+		B3BD7024C61D9E5B183ADE992A4C524F /* PINCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCache.h; path = PINCache/PINCache.h; sourceTree = "<group>"; };
+		C282EA6F5D40817DCB9789C095D6254D /* PINOperationGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINOperationGroup.m; path = Source/PINOperationGroup.m; sourceTree = "<group>"; };
+		C8A9A0F8C9787E033BF207014529DCB5 /* Pods-FelixUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FelixUITests.modulemap"; sourceTree = "<group>"; };
+		CB8156207CF129DDE90279AE0AA8373A /* PINOperation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PINOperation.modulemap; sourceTree = "<group>"; };
+		CF7F531C85DFC19EFDEB82EB221291AF /* Pods-Felix-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Felix-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0144E8F7B71F4E3B171F7EA2095A7A8 /* Pods-FelixUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FelixUITests-Info.plist"; sourceTree = "<group>"; };
+		D0FE57E98902715D9BBB367C26E8A6CD /* Pods-FelixTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FelixTests-Info.plist"; sourceTree = "<group>"; };
+		D14EBD1A8E34912930ECF91AAB59B311 /* PINCacheObjectSubscripting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCacheObjectSubscripting.h; path = PINCache/PINCacheObjectSubscripting.h; sourceTree = "<group>"; };
+		D1BD224188DBB96940F34B894740797F /* PINCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINCache-dummy.m"; sourceTree = "<group>"; };
+		D289251C5398A6D2EF143337EEF60D42 /* Pods_FelixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FelixUITests.framework; path = "Pods-FelixUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E063E5A71E48AD664FC0DD0FDF23CC26 /* PINOperationTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperationTypes.h; path = Source/PINOperationTypes.h; sourceTree = "<group>"; };
+		E1CF8BEFA81210A53CEB8ED563F5F65B /* Pods-FelixUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FelixUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E24F4321191A48873182A9A5B1A9987F /* Pods-FelixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FelixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E380F7082FFD8B4EB6B3BE6DDF0E846D /* Pods-FelixUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FelixUITests-umbrella.h"; sourceTree = "<group>"; };
+		E7982C252B907075B10DBBB9E0C25BF2 /* PINOperation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PINOperation-Info.plist"; sourceTree = "<group>"; };
+		F2E6F3A70E2CDA71FA6ADF7DB2F7741D /* Pods_FelixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FelixTests.framework; path = "Pods-FelixTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F336FE4D7A192D4AECFB79112C9DCA88 /* Pods-FelixTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FelixTests.modulemap"; sourceTree = "<group>"; };
+		F49763CDA9B874301045D869C49C7DF7 /* Pods-FelixUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FelixUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC014B1DC1F59ABD919A19F8A95CC4B2 /* PINCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PINCache-Info.plist"; sourceTree = "<group>"; };
+		FCC1928818482E678079ED6003140152 /* SCSDKCreativeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCreativeKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A0636539D5B89BDA7AE48D1FA96F07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9860A9B8847CB2E32913B53ED7C9BA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B6939343F021558DB3EEA93D6BD155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150369D1E4EA1AE9BCC312474BC2F0F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52F2B3C576BDA49EDE4499DF6578C6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00AA85BC2E2372A7838E6A0969B107D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE110680A5243732C8E451B85F5BE0AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB46BBA128F5418A4CD47EF2B83F39F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7A32E75C485483272DBF33D68E13ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41F0B3B5451072B60965A4F723387EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13E223D363311A5644C5EB4340D21F54 /* PINCache */ = {
+			isa = PBXGroup;
+			children = (
+				4B06CF61955517A827030699B02D5075 /* Nullability.h */,
+				B3BD7024C61D9E5B183ADE992A4C524F /* PINCache.h */,
+				3AE049E6A3A1EA913BDCB7AFCF7BA7FA /* PINCache.m */,
+				D14EBD1A8E34912930ECF91AAB59B311 /* PINCacheObjectSubscripting.h */,
+				AF7556C117825C34F16F0C2BB5193952 /* PINDiskCache.h */,
+				7B6BCD2CF6B6B6FB27F7ADA7D71B8484 /* PINDiskCache.m */,
+				3701F83D359B103C76481D1BB3888EDA /* PINMemoryCache.h */,
+				86604EA57C66E61E48BFCE8BFE7A37F4 /* PINMemoryCache.m */,
+				C0575CA0A1A809FE461128866A2365AB /* Support Files */,
+			);
+			name = PINCache;
+			path = PINCache;
+			sourceTree = "<group>";
+		};
+		3587BC6CA301A4FDE59F9475770F0038 /* Pods-Felix */ = {
+			isa = PBXGroup;
+			children = (
+				896B6CF32E0369FE9EBE8177F510F9C2 /* Pods-Felix.modulemap */,
+				CF7F531C85DFC19EFDEB82EB221291AF /* Pods-Felix-acknowledgements.markdown */,
+				4B02915FB7EEC498D5EC8F6F18EC633E /* Pods-Felix-acknowledgements.plist */,
+				A6429A7F2BDEEEA5AE5F9D7FB9302427 /* Pods-Felix-dummy.m */,
+				013904782702BA1E99466AA2C039C4B5 /* Pods-Felix-frameworks.sh */,
+				304401FB2507959BCCABA6793D302A7E /* Pods-Felix-Info.plist */,
+				5E362C02277F8521455DA4159EF4BA01 /* Pods-Felix-umbrella.h */,
+				954BE2DCD6153F28AD6736E929F384E0 /* Pods-Felix.debug.xcconfig */,
+				24B7265DB30896A7BC5F148EF235BB92 /* Pods-Felix.release.xcconfig */,
+			);
+			name = "Pods-Felix";
+			path = "Target Support Files/Pods-Felix";
+			sourceTree = "<group>";
+		};
+		361AE5E53B39F3845A4B8D0F4A4381E9 /* SCSDKBitmojiKit */ = {
+			isa = PBXGroup;
+			children = (
+				BC2AF367BDE0BD68E1DAF59330E57C92 /* Frameworks */,
+			);
+			name = SCSDKBitmojiKit;
+			sourceTree = "<group>";
+		};
+		5E4D71F6763620B0D75E3D8D7CFB9F4F /* SCSDKCreativeKit */ = {
+			isa = PBXGroup;
+			children = (
+				8640E6830F832098E46E77AA1CE4242A /* Frameworks */,
+			);
+			name = SCSDKCreativeKit;
+			sourceTree = "<group>";
+		};
+		64933BE641C29AB33300CDDC4B974BA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6320170E5A5A268B11CAE15D4EF6A9E3 /* PINCache.framework */,
+				22C347595B1851A1E5B0A3762BB18EC9 /* PINOperation.framework */,
+				6F21F76CBF273D74A8121287B17E9816 /* Pods_Felix.framework */,
+				F2E6F3A70E2CDA71FA6ADF7DB2F7741D /* Pods_FelixTests.framework */,
+				D289251C5398A6D2EF143337EEF60D42 /* Pods_FelixUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8640E6830F832098E46E77AA1CE4242A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCC1928818482E678079ED6003140152 /* SCSDKCreativeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D94EBE75FE489B1EFDA578438C62B71 /* Pods-FelixTests */ = {
+			isa = PBXGroup;
+			children = (
+				F336FE4D7A192D4AECFB79112C9DCA88 /* Pods-FelixTests.modulemap */,
+				3A78A0A216A42B8288BCD8757AC90BE6 /* Pods-FelixTests-acknowledgements.markdown */,
+				754692546C34D87263AD935D63E0A6CA /* Pods-FelixTests-acknowledgements.plist */,
+				4212DB7DAD50DBA2D7A7C7E02EC26A76 /* Pods-FelixTests-dummy.m */,
+				D0FE57E98902715D9BBB367C26E8A6CD /* Pods-FelixTests-Info.plist */,
+				649EBDA35B3308E71AC3C72F7F5B4D4E /* Pods-FelixTests-umbrella.h */,
+				08832A259BE71A5DF492546A2B386BAB /* Pods-FelixTests.debug.xcconfig */,
+				3251A27DDD0C06C1CF8487F5DF1902F5 /* Pods-FelixTests.release.xcconfig */,
+			);
+			name = "Pods-FelixTests";
+			path = "Target Support Files/Pods-FelixTests";
+			sourceTree = "<group>";
+		};
+		B084D56182BDDA7E7BDDF6445F355542 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3587BC6CA301A4FDE59F9475770F0038 /* Pods-Felix */,
+				8D94EBE75FE489B1EFDA578438C62B71 /* Pods-FelixTests */,
+				C8CE14F9D996F9E50F2561A9187485F4 /* Pods-FelixUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B7D1EE54AB771530B91CE4A140BD140B /* SnapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				361AE5E53B39F3845A4B8D0F4A4381E9 /* SCSDKBitmojiKit */,
+				5E4D71F6763620B0D75E3D8D7CFB9F4F /* SCSDKCreativeKit */,
+				FED429B964068D3D5E411C9DA86E6F25 /* SCSDKLoginKit */,
+				DA4707E1DE93EE5816E7A0F9C1680C86 /* Support Files */,
+			);
+			name = SnapSDK;
+			path = SnapSDK;
+			sourceTree = "<group>";
+		};
+		BC2AF367BDE0BD68E1DAF59330E57C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				557B65404A074C22607FBF46D04F539D /* SCSDKBitmojiKit.framework */,
+				329AA5A88D166454A201A11496BE6DF7 /* SCSDKCoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0575CA0A1A809FE461128866A2365AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37AF4206C9B4C95863AEB434623E665E /* PINCache.modulemap */,
+				50D4311BDF496C2CDA34D78A4CD06AAB /* PINCache.xcconfig */,
+				D1BD224188DBB96940F34B894740797F /* PINCache-dummy.m */,
+				FC014B1DC1F59ABD919A19F8A95CC4B2 /* PINCache-Info.plist */,
+				77B147796CDACBECD4F592A63670D1A5 /* PINCache-prefix.pch */,
+				40DD164DEF8093D2C83FEA810413B063 /* PINCache-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PINCache";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C8CE14F9D996F9E50F2561A9187485F4 /* Pods-FelixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8A9A0F8C9787E033BF207014529DCB5 /* Pods-FelixUITests.modulemap */,
+				E1CF8BEFA81210A53CEB8ED563F5F65B /* Pods-FelixUITests-acknowledgements.markdown */,
+				F49763CDA9B874301045D869C49C7DF7 /* Pods-FelixUITests-acknowledgements.plist */,
+				58514D0C4C33DC72E5987EAC5F4AD0E1 /* Pods-FelixUITests-dummy.m */,
+				D0144E8F7B71F4E3B171F7EA2095A7A8 /* Pods-FelixUITests-Info.plist */,
+				E380F7082FFD8B4EB6B3BE6DDF0E846D /* Pods-FelixUITests-umbrella.h */,
+				E24F4321191A48873182A9A5B1A9987F /* Pods-FelixUITests.debug.xcconfig */,
+				5B28AA5E4608637EBBD842DA633E721A /* Pods-FelixUITests.release.xcconfig */,
+			);
+			name = "Pods-FelixUITests";
+			path = "Target Support Files/Pods-FelixUITests";
+			sourceTree = "<group>";
+		};
+		C99F46225F601A57D63F233D2F644352 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13E223D363311A5644C5EB4340D21F54 /* PINCache */,
+				DA018A7CE842D1AF12F5C7DABCA2E1BB /* PINOperation */,
+				B7D1EE54AB771530B91CE4A140BD140B /* SnapSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBCA6C462051256FFA8C95C673C81C9D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB8156207CF129DDE90279AE0AA8373A /* PINOperation.modulemap */,
+				339FFF06812CBFD296106D1220E78C1F /* PINOperation.xcconfig */,
+				438D1DFCFE759848FF950155B66C3AF6 /* PINOperation-dummy.m */,
+				E7982C252B907075B10DBBB9E0C25BF2 /* PINOperation-Info.plist */,
+				9E5CD3FDFF797E5B15DA559027D0FB73 /* PINOperation-prefix.pch */,
+				95FEED927FB7B855AFE50D025E8EC675 /* PINOperation-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PINOperation";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C99F46225F601A57D63F233D2F644352 /* Pods */,
+				64933BE641C29AB33300CDDC4B974BA7 /* Products */,
+				B084D56182BDDA7E7BDDF6445F355542 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA018A7CE842D1AF12F5C7DABCA2E1BB /* PINOperation */ = {
+			isa = PBXGroup;
+			children = (
+				3159EDC867085FA3D704A375B017CF8D /* PINOperation.h */,
+				40054B42DA3AB3572C075056AE505917 /* PINOperationGroup.h */,
+				C282EA6F5D40817DCB9789C095D6254D /* PINOperationGroup.m */,
+				1316940C4D3817355C4DB7D09795F3F5 /* PINOperationMacros.h */,
+				8BE84EFF558CD36182669DCF5CD50186 /* PINOperationQueue.h */,
+				372A287852B673123907688C994F104B /* PINOperationQueue.m */,
+				E063E5A71E48AD664FC0DD0FDF23CC26 /* PINOperationTypes.h */,
+				CBCA6C462051256FFA8C95C673C81C9D /* Support Files */,
+			);
+			name = PINOperation;
+			path = PINOperation;
+			sourceTree = "<group>";
+		};
+		DA4707E1DE93EE5816E7A0F9C1680C86 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				290A7DE74F1BFF84438A2DCCE8A6AC65 /* SnapSDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapSDK";
+			sourceTree = "<group>";
+		};
+		EE49ED90A0DF4CEB89940C124F80A03F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF584D6CAF2F7A349F3D8C7616C2864A /* SCSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED429B964068D3D5E411C9DA86E6F25 /* SCSDKLoginKit */ = {
+			isa = PBXGroup;
+			children = (
+				EE49ED90A0DF4CEB89940C124F80A03F /* Frameworks */,
+			);
+			name = SCSDKLoginKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0964468748D4D69DA3D621375535C4AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3297149361F418E098B73CE73A6BE254 /* Pods-FelixTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27380FD3B3E2C268A229E7BD2DC52F2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8E53A4766CD7934C16B7166E8E0652 /* Pods-Felix-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847C46E034F648F378186AB8A34C40EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518F4304F6A814B20B5A0DA861E7F00C /* Pods-FelixUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8307E7FCF814058C780374D4CB053AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB07207A7C7FA716C3F8CBE8724D030 /* Nullability.h in Headers */,
+				70541688A5DCF8322045C76978AA22C6 /* PINCache-umbrella.h in Headers */,
+				D5422C511FA396C77C6BFA58AC5B3F9A /* PINCache.h in Headers */,
+				D9ABD7194442C3F29B832059F84E78C2 /* PINCacheObjectSubscripting.h in Headers */,
+				1205F56794731BF11A01984CBAFF03D5 /* PINDiskCache.h in Headers */,
+				E202950DB8E545C4B3FDC710D311C1F5 /* PINMemoryCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72306FE830F00544AC43ACCE53699B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E768A095E7EE54F9C5F88B326DABD8F /* PINOperation-umbrella.h in Headers */,
+				09F6E5D26BAF33560E21029A5E5CAA2E /* PINOperation.h in Headers */,
+				0F33A622106DCD1F84FF2B85C79F8AA3 /* PINOperationGroup.h in Headers */,
+				E0635A3A1DA3DEFF04BDD48877ADF7B4 /* PINOperationMacros.h in Headers */,
+				33F1AB231EF66445FAF4C2AFB6159556 /* PINOperationQueue.h in Headers */,
+				C432E9D2B8B0B47480B1CA4A92EF49BC /* PINOperationTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		33AD53B0598E26778B916FDED09BBE06 /* Pods-FelixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5433F207787743849A71FC08F6ADF5AB /* Build configuration list for PBXNativeTarget "Pods-FelixUITests" */;
+			buildPhases = (
+				847C46E034F648F378186AB8A34C40EF /* Headers */,
+				FBC893709CA2CB6F61F27E630CE33B6B /* Sources */,
+				B9B6939343F021558DB3EEA93D6BD155 /* Frameworks */,
+				8621E73A57DF60925564AE8C2FF53DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B711B75B2DF4914FA0C6117FA72313FA /* PBXTargetDependency */,
+			);
+			name = "Pods-FelixUITests";
+			productName = "Pods-FelixUITests";
+			productReference = D289251C5398A6D2EF143337EEF60D42 /* Pods_FelixUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		57310B016450E63387C9D64F4933E995 /* PINOperation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85A013B1576B7C0CC5C4286D6295FDA /* Build configuration list for PBXNativeTarget "PINOperation" */;
+			buildPhases = (
+				F72306FE830F00544AC43ACCE53699B2 /* Headers */,
+				6DA8481E7F92D7DD8ABFDB82C31A7838 /* Sources */,
+				EF7A32E75C485483272DBF33D68E13ED /* Frameworks */,
+				C41D97BE2E280D0B202889517DFFD067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PINOperation;
+			productName = PINOperation;
+			productReference = 22C347595B1851A1E5B0A3762BB18EC9 /* PINOperation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7CA2A91E06CB572138756573613E9BCB /* Pods-Felix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72471B7EA60813A6375C651E072BB287 /* Build configuration list for PBXNativeTarget "Pods-Felix" */;
+			buildPhases = (
+				27380FD3B3E2C268A229E7BD2DC52F2A /* Headers */,
+				71F970D2E157A46B91C176CA15045DEB /* Sources */,
+				DE110680A5243732C8E451B85F5BE0AA /* Frameworks */,
+				2911D42C3DE1670FE8569F6BEAD81082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14C9A8A85C987056B62782803C4F8ED /* PBXTargetDependency */,
+				17F2D521596D3014A46D0A1DD059E62A /* PBXTargetDependency */,
+				4EFE161A7D1D0401E090103117B996B2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Felix";
+			productName = "Pods-Felix";
+			productReference = 6F21F76CBF273D74A8121287B17E9816 /* Pods_Felix.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7CB9FDBE4B2EF964A8E0B231EC66B110 /* Pods-FelixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC84E7EE5CD922D2749936AD06D06642 /* Build configuration list for PBXNativeTarget "Pods-FelixTests" */;
+			buildPhases = (
+				0964468748D4D69DA3D621375535C4AD /* Headers */,
+				8A78507A8DA118D3DE0D188C846952EA /* Sources */,
+				C52F2B3C576BDA49EDE4499DF6578C6C /* Frameworks */,
+				64CB1AD4655E0DA1DF87FCB623AD2C8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02FFB451A9F627DAAD85F74A6C22739D /* PBXTargetDependency */,
+			);
+			name = "Pods-FelixTests";
+			productName = "Pods-FelixTests";
+			productReference = F2E6F3A70E2CDA71FA6ADF7DB2F7741D /* Pods_FelixTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A927C3CD51C30012080D6CA07959B246 /* PINCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25EA7230631FCE67ABC689594C86C53E /* Build configuration list for PBXNativeTarget "PINCache" */;
+			buildPhases = (
+				E8307E7FCF814058C780374D4CB053AA /* Headers */,
+				89EB5EE09941D7932CF652404DD86B46 /* Sources */,
+				40A0636539D5B89BDA7AE48D1FA96F07 /* Frameworks */,
+				412E9E1B49CB0084F9DC04525160FBB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PINCache;
+			productName = PINCache;
+			productReference = 6320170E5A5A268B11CAE15D4EF6A9E3 /* PINCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 64933BE641C29AB33300CDDC4B974BA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A927C3CD51C30012080D6CA07959B246 /* PINCache */,
+				57310B016450E63387C9D64F4933E995 /* PINOperation */,
+				7CA2A91E06CB572138756573613E9BCB /* Pods-Felix */,
+				7CB9FDBE4B2EF964A8E0B231EC66B110 /* Pods-FelixTests */,
+				33AD53B0598E26778B916FDED09BBE06 /* Pods-FelixUITests */,
+				DC460828FF0F2F76C86CA020169EDB5F /* SnapSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2911D42C3DE1670FE8569F6BEAD81082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412E9E1B49CB0084F9DC04525160FBB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64CB1AD4655E0DA1DF87FCB623AD2C8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8621E73A57DF60925564AE8C2FF53DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41D97BE2E280D0B202889517DFFD067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DA8481E7F92D7DD8ABFDB82C31A7838 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FAB8880262197ED92BEB7CA98859A4 /* PINOperation-dummy.m in Sources */,
+				891F50F07D17D9243C32CDC1C005E7CC /* PINOperationGroup.m in Sources */,
+				A5A1AF7C0E3004080232CA69046801C5 /* PINOperationQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F970D2E157A46B91C176CA15045DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF5461F319E4974659915D8D1B95FA6 /* Pods-Felix-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EB5EE09941D7932CF652404DD86B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8AE44F6141E17A59458A48BC6D3D445 /* PINCache-dummy.m in Sources */,
+				4549E8104234685CE113A2D556B79A33 /* PINCache.m in Sources */,
+				08B1F50074F67C37FA3D0952DF330F0D /* PINDiskCache.m in Sources */,
+				F116B79370F076FBAACFFF40101E37E9 /* PINMemoryCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A78507A8DA118D3DE0D188C846952EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9FD8D84003C553547F3AA49C76B764 /* Pods-FelixTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC893709CA2CB6F61F27E630CE33B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7A63006F77669CB60CC54030636F4D /* Pods-FelixUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02FFB451A9F627DAAD85F74A6C22739D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Felix";
+			target = 7CA2A91E06CB572138756573613E9BCB /* Pods-Felix */;
+			targetProxy = FFE79DD7765C7E8AD2583F7D05908B77 /* PBXContainerItemProxy */;
+		};
+		17F2D521596D3014A46D0A1DD059E62A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINOperation;
+			target = 57310B016450E63387C9D64F4933E995 /* PINOperation */;
+			targetProxy = A6882DC4CAD7F166DA2C61C65EB7D184 /* PBXContainerItemProxy */;
+		};
+		4EFE161A7D1D0401E090103117B996B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapSDK;
+			target = DC460828FF0F2F76C86CA020169EDB5F /* SnapSDK */;
+			targetProxy = FB27C00C8672C502DD40CC41AF2BDE37 /* PBXContainerItemProxy */;
+		};
+		65CE75C7216F7C33841114D1BB7C211B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINCache;
+			target = A927C3CD51C30012080D6CA07959B246 /* PINCache */;
+			targetProxy = 4BE92B6036C3BC557D68A4927F55A86B /* PBXContainerItemProxy */;
+		};
+		8C517F5BB22D75717A8DB649D45F66C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINOperation;
+			target = 57310B016450E63387C9D64F4933E995 /* PINOperation */;
+			targetProxy = DFDB35E32FDCECFD6DEA6B35EBEE429E /* PBXContainerItemProxy */;
+		};
+		B711B75B2DF4914FA0C6117FA72313FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Felix";
+			target = 7CA2A91E06CB572138756573613E9BCB /* Pods-Felix */;
+			targetProxy = 4CD86037658DBF02D066237BBACD46E1 /* PBXContainerItemProxy */;
+		};
+		D14C9A8A85C987056B62782803C4F8ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINCache;
+			target = A927C3CD51C30012080D6CA07959B246 /* PINCache */;
+			targetProxy = 446093E95CD7BF97D23080B78AEBB92A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CCE480803FA7557319191B70230692D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339FFF06812CBFD296106D1220E78C1F /* PINOperation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINOperation/PINOperation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINOperation/PINOperation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PINOperation/PINOperation.modulemap";
+				PRODUCT_MODULE_NAME = PINOperation;
+				PRODUCT_NAME = PINOperation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		21A669DDE01953B63F124DFBE93DE761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 339FFF06812CBFD296106D1220E78C1F /* PINOperation.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINOperation/PINOperation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINOperation/PINOperation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PINOperation/PINOperation.modulemap";
+				PRODUCT_MODULE_NAME = PINOperation;
+				PRODUCT_NAME = PINOperation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		37D99AFC042B5D67E2B5E724156E9F3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 290A7DE74F1BFF84438A2DCCE8A6AC65 /* SnapSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		503EAAA1F358865C65AD1D7E38411D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08832A259BE71A5DF492546A2B386BAB /* Pods-FelixTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FelixTests/Pods-FelixTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FelixTests/Pods-FelixTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A6DFC0AA4FFF26DF3C3C3EBCA02667A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3251A27DDD0C06C1CF8487F5DF1902F5 /* Pods-FelixTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FelixTests/Pods-FelixTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FelixTests/Pods-FelixTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70AEC63DEE9DBCA16013613728DA89FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954BE2DCD6153F28AD6736E929F384E0 /* Pods-Felix.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Felix/Pods-Felix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Felix/Pods-Felix.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89E0EAA54291A6C709F1A6A6B151F7DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B28AA5E4608637EBBD842DA633E721A /* Pods-FelixUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FelixUITests/Pods-FelixUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FelixUITests/Pods-FelixUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FCAE843310ADF2A7B7CE490213B8533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D4311BDF496C2CDA34D78A4CD06AAB /* PINCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINCache/PINCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PINCache/PINCache.modulemap";
+				PRODUCT_MODULE_NAME = PINCache;
+				PRODUCT_NAME = PINCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A75CF0A9E5E71A62C92B6449BDF0CADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24F4321191A48873182A9A5B1A9987F /* Pods-FelixUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FelixUITests/Pods-FelixUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FelixUITests/Pods-FelixUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDD73BE712A506ED3067FB94D3F08A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D4311BDF496C2CDA34D78A4CD06AAB /* PINCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINCache/PINCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PINCache/PINCache.modulemap";
+				PRODUCT_MODULE_NAME = PINCache;
+				PRODUCT_NAME = PINCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E12E3BD16C1990E075131C0C97ECE0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 290A7DE74F1BFF84438A2DCCE8A6AC65 /* SnapSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE13997ACF953D509CA5A15053082530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B7265DB30896A7BC5F148EF235BB92 /* Pods-Felix.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Felix/Pods-Felix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Felix/Pods-Felix.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25EA7230631FCE67ABC689594C86C53E /* Build configuration list for PBXNativeTarget "PINCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FCAE843310ADF2A7B7CE490213B8533 /* Debug */,
+				CDD73BE712A506ED3067FB94D3F08A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AC1E1DC01F7953D1864623DA374C21 /* Build configuration list for PBXAggregateTarget "SnapSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37D99AFC042B5D67E2B5E724156E9F3D /* Debug */,
+				E12E3BD16C1990E075131C0C97ECE0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5433F207787743849A71FC08F6ADF5AB /* Build configuration list for PBXNativeTarget "Pods-FelixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75CF0A9E5E71A62C92B6449BDF0CADD /* Debug */,
+				89E0EAA54291A6C709F1A6A6B151F7DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72471B7EA60813A6375C651E072BB287 /* Build configuration list for PBXNativeTarget "Pods-Felix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AEC63DEE9DBCA16013613728DA89FE /* Debug */,
+				EE13997ACF953D509CA5A15053082530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC84E7EE5CD922D2749936AD06D06642 /* Build configuration list for PBXNativeTarget "Pods-FelixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503EAAA1F358865C65AD1D7E38411D4B /* Debug */,
+				5A6DFC0AA4FFF26DF3C3C3EBCA02667A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F85A013B1576B7C0CC5C4286D6295FDA /* Build configuration list for PBXNativeTarget "PINOperation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CCE480803FA7557319191B70230692D /* Debug */,
+				21A669DDE01953B63F124DFBE93DE761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
