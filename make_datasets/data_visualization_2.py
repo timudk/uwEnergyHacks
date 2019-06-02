@@ -28,19 +28,22 @@ def compute_24_hours_matrix(outside_temp, data, frames_per_min):
 	for i in range(time_range):
 		current_time = 24*(i/time_range)
 		temperatures[i].fill(outside_temp[math.floor(current_time)])
-		for j in range(16): 
-			wanted_avg = compute_average_in_office(current_time, data[j][0])
-			if np.isnan(wanted_avg):
-				wanted_avg = 17
-			num_x, num_y = compute_nx_ny(j)
-			num_y += 1
-			num_x += 1
-
-			if i==0:
-				temperatures[i, num_x, num_y] = wanted_avg
-
-			else:
-				temperatures[i, num_x, num_y] = (wanted_avg + temperatures[i-1, num_x, num_y])/2
+		
+		for x in range (4):
+			wanted_avg = 0
+			for y in range(4):
+				print((x*4)+y, " ")
+				if np.isnan(compute_average_in_office(current_time, data[(x*4)+y][0])):
+					wanted_avg = 17 + wanted_avg
+				else:
+					wanted_avg = compute_average_in_office(current_time, data[(x*4)+y][0]) + wanted_avg
+				
+			for y in range(4):
+				if i==0:
+					temperatures[i, x+1, y+1] = wanted_avg/4
+				else:
+					temperatures[i, x+1, y+1] = (wanted_avg/4 + temperatures[i-1, x+1, y+1])/2
+					print(temperatures[i, x+1, y+1])
 
 	return temperatures
 		
@@ -53,7 +56,7 @@ def compute_average_in_office(time, data):
 
 	n_people_in_office = len(who_in_office)
 	if n_people_in_office == 0:
-		return np.nan
+		return 20
 
 	sum_temp = 0.0
 	for j in who_in_office:
@@ -72,7 +75,7 @@ def get_temp(time, data):
 def main():
 	outside_temp = read_outside_temp('day_toronto')
 	data = read_data('section_data')
-	
+	print(len(data))
 	N_FRAMES_PER_MINUTE = 12
 
 	temp = compute_24_hours_matrix(outside_temp, data, N_FRAMES_PER_MINUTE)
@@ -91,11 +94,11 @@ def main():
 		# ims.append([im])
 		# plt.show()
 		if(i > 99):
-			plt.savefig('picfolder/00' + str(i) + '.jpeg')
+			plt.savefig('picfolder1/00' + str(i) + '.jpeg')
 		elif(i>9):
-			plt.savefig('picfolder/000' + str(i) + '.jpeg')
+			plt.savefig('picfolder1/000' + str(i) + '.jpeg')
 		else:
-			plt.savefig('picfolder/0000' + str(i) + '.jpeg')
+			plt.savefig('picfolder1/0000' + str(i) + '.jpeg')
 
 
 
