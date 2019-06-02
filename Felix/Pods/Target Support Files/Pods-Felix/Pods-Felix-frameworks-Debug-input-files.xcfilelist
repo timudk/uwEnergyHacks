@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Felix/Pods-Felix-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
 ${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework
 ${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework
 ${PODS_ROOT}/SnapSDK/SCSDKBitmojiKit.framework
