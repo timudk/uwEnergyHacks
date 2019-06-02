@@ -34,18 +34,28 @@ def compute_24_hours_matrix(outside_temp, data, frames_per_min):
 		for x in range (4):
 			wanted_avg = 0
 			for y in range(4):
-				print((x*4)+y, " ")
-				if np.isnan(compute_average_in_office(current_time, data[(x*4)+y][0])):
-					wanted_avg = 17 + wanted_avg
-				else:
-					wanted_avg = compute_average_in_office(current_time, data[(x*4)+y][0]) + wanted_avg
-				
+				wanted_avg += compute_average_in_office(current_time, data[(x*4)+y][0])
+			
+			wanted_avg/=4
+			#print("Wanted avrage :",wanted_avg, "Time Step :", i)
 			for y in range(4):
 				if i==0:
-					temperatures[i, x+1, y+1] = wanted_avg/4
-				else:
-					temperatures[i, x+1, y+1] = (wanted_avg/4 + temperatures[i-1, x+1, y+1])/2
-					# print(temperatures[i, x+1, y+1])
+					temperatures[i, x+1, y+1] = wanted_avg
+				else:			
+					if(wanted_avg > temperatures[i-1, x+1, y+1]):
+						#print("Wanted >")
+						if(wanted_avg - temperatures[i-1, x+1, y+1]<1):
+							temperatures[i, x+1, y+1] = wanted_avg
+						else:
+							temperatures[i, x+1, y+1] = temperatures[i-1, x+1, y+1] + 1
+					elif(wanted_avg < temperatures[i-1, x+1, y+1]):
+						#print("Wanted <")
+						if(abs(wanted_avg - temperatures[i-1, x+1, y+1])<1):
+							temperatures[i, x+1, y+1] = wanted_avg
+						else:
+							temperatures[i, x+1, y+1] = temperatures[i-1, x+1, y+1] - 1
+					else:
+						temperatures[i, x+1, y+1] = temperatures[i-1, x+1, y+1]
 
 				total_comfort_loss += compute_comfort_loss(data[(x*4)+y][0], temperatures[i, x+1, y+1], current_time)
 				print('comfort:', total_comfort_loss)
@@ -106,29 +116,29 @@ def main():
 	outside_temp = read_outside_temp('day_toronto')
 	data = read_data('section_data')
 	print(len(data))
-	N_FRAMES_PER_MINUTE = 12
+	N_FRAMES_PER_MINUTE = 20
 
 	temp = compute_24_hours_matrix(outside_temp, data, N_FRAMES_PER_MINUTE)
 
-	# for i in range(24*N_FRAMES_PER_MINUTE):
-	# 	fig = plt.figure()
-	# 	plt.imshow(temp[i], cmap=plt.cm.RdBu_r, interpolation='nearest')
-	# 	plt.plot([0.5, 0.5], [0.5, 4.5], 'k')
-	# 	plt.plot([4.5, 4.5], [0.5, 4.5], 'k')
-	# 	for j in range(5):
-	# 		plt.plot([0.5, 4.5], [j+0.5, j+0.5], 'k')
+	for i in range(24*N_FRAMES_PER_MINUTE):
+		fig = plt.figure()
+		plt.imshow(temp[i], cmap=plt.cm.RdBu_r, interpolation='nearest')
+		plt.plot([0.5, 0.5], [0.5, 4.5], 'k')
+		plt.plot([4.5, 4.5], [0.5, 4.5], 'k')
+		for j in range(5):
+			plt.plot([0.5, 4.5], [j+0.5, j+0.5], 'k')
 
-	# 	plt.axis('off')
-	# 	plt.colorbar()
-	# 	plt.clim(0.0, 28.0)
-	# 	# ims.append([im])
-	# 	# plt.show()
-	# 	if(i > 99):
-	# 		plt.savefig('picfolder1/00' + str(i) + '.jpeg')
-	# 	elif(i>9):
-	# 		plt.savefig('picfolder1/000' + str(i) + '.jpeg')
-	# 	else:
-	# 		plt.savefig('picfolder1/0000' + str(i) + '.jpeg')
+		plt.axis('off')
+		plt.colorbar()
+		plt.clim(0.0, 28.0)
+		# ims.append([im])
+		# plt.show()
+		if(i > 99):
+			plt.savefig('baseline_model/00' + str(i) + '.jpeg')
+		elif(i>9):
+			plt.savefig('baseline_model/000' + str(i) + '.jpeg')
+		else:
+			plt.savefig('baseline_model/0000' + str(i) + '.jpeg')
 
 
 

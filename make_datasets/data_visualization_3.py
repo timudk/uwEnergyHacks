@@ -43,9 +43,17 @@ def compute_24_hours_matrix(outside_temp, data, frames_per_min):
 
 			else:
 				if(wanted_avg > temperatures[i-1, num_x, num_y]):
-					temperatures[i, num_x, num_y] = temperatures[i-1, num_x, num_y] + 0.5
+					if(wanted_avg - temperatures[i-1, num_x, num_y]<1):
+						temperatures[i, num_x, num_y] = wanted_avg
+					else:
+						temperatures[i, num_x, num_y] = temperatures[i-1, num_x, num_y] + 1
 				elif(wanted_avg < temperatures[i-1, num_x, num_y]):
-					temperatures[i, num_x, num_y] = temperatures[i-1, num_x, num_y] - 0.5
+					if(abs(wanted_avg - temperatures[i-1, num_x, num_y])<1):
+						temperatures[i, num_x, num_y] = wanted_avg
+					else:
+						temperatures[i, num_x, num_y] = temperatures[i-1, num_x, num_y] - 1
+				else:
+					temperatures[i,num_x, num_y] = temperatures[i-1,num_x, num_y]
 
 
 
@@ -110,29 +118,29 @@ def main():
 	outside_temp = read_outside_temp('day_toronto')
 	data = read_data('section_data')
 	
-	N_FRAMES_PER_MINUTE = 12
+	N_FRAMES_PER_MINUTE = 20
 
 	temp = compute_24_hours_matrix(outside_temp, data, N_FRAMES_PER_MINUTE)
 
-	# for i in range(24*N_FRAMES_PER_MINUTE):
-		# fig = plt.figure()
-		# plt.imshow(temp[i], cmap=plt.cm.RdBu_r, interpolation='nearest')
-		# plt.plot([0.5, 0.5], [0.5, 4.5], 'k')
-		# plt.plot([4.5, 4.5], [0.5, 4.5], 'k')
-		# for j in range(5):
-		# 	plt.plot([0.5, 4.5], [j+0.5, j+0.5], 'k')
+	for i in range(24*N_FRAMES_PER_MINUTE):
+		fig = plt.figure()
+		plt.imshow(temp[i], cmap=plt.cm.RdBu_r, interpolation='nearest')
+		plt.plot([0.5, 0.5], [0.5, 4.5], 'k')
+		plt.plot([4.5, 4.5], [0.5, 4.5], 'k')
+		for j in range(5):
+			plt.plot([0.5, 4.5], [j+0.5, j+0.5], 'k')
 
-		# plt.axis('off')
-		# plt.colorbar()
-		# plt.clim(0.0, 28.0)
-		# # ims.append([im])
-		# # plt.show()
-		# if(i > 99):
-		# 	plt.savefig('picfolder/00' + str(i) + '.jpeg')
-		# elif(i>9):
-		# 	plt.savefig('picfolder/000' + str(i) + '.jpeg')
-		# else:
-		# 	plt.savefig('picfolder/0000' + str(i) + '.jpeg')
+		plt.axis('off')
+		plt.colorbar()
+		plt.clim(0.0, 28.0)
+		# ims.append([im])
+		# plt.show()
+		if(i > 99):
+			plt.savefig('Felix_model/00' + str(i) + '.jpeg')
+		elif(i>9):
+			plt.savefig('Felix_model/000' + str(i) + '.jpeg')
+		else:
+			plt.savefig('Felix_model/0000' + str(i) + '.jpeg')
 
 
 
