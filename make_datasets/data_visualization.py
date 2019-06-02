@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 import math
+import matplotlib.animation as animation
 
 def compute_nx_ny(k):
 	n_x = k%4
@@ -25,15 +26,21 @@ def compute_24_hours_matrix(outside_temp, data, frames_per_min):
 
 	current_time = 0.0
 	for i in range(time_range):
-		temperatures[i].fill(outside_temp[math.floor(current_time)])
 		current_time = 24*(i/time_range)
+		temperatures[i].fill(outside_temp[math.floor(current_time)])
 		for j in range(16): 
-			avg = compute_average_in_office(current_time, data[j][0])
-			if np.isnan(avg):
-				avg = outside_temp[math.floor(current_time)]
-			print(avg)
+			wanted_avg = compute_average_in_office(current_time, data[j][0])
+			if np.isnan(wanted_avg):
+				wanted_avg = 17
 			num_x, num_y = compute_nx_ny(j)
-			temperatures[i, num_x, num_y] = avg
+			num_y += 1
+			num_x += 1
+
+			if i==0:
+				temperatures[i, num_x, num_y] = wanted_avg
+
+			else:
+				temperatures[i, num_x, num_y] = (wanted_avg + temperatures[i-1, num_x, num_y])/2
 
 	return temperatures
 		
@@ -66,14 +73,31 @@ def main():
 	outside_temp = read_outside_temp('day_toronto')
 	data = read_data('section_data')
 	
-	N_FRAMES_PER_MINUTE = 1
+	N_FRAMES_PER_MINUTE = 12
 
 	temp = compute_24_hours_matrix(outside_temp, data, N_FRAMES_PER_MINUTE)
 
-	for i in range(24):
-		plt.imshow(temp[i], cmap=plt.cm.RdBu, interpolation='nearest')
+	for i in range(24*N_FRAMES_PER_MINUTE):
+		fig = plt.figure()
+		plt.imshow(temp[i], cmap=plt.cm.RdBu_r, interpolation='nearest')
+		plt.plot([0.5, 0.5], [0.5, 4.5], 'k')
+		plt.plot([4.5, 4.5], [0.5, 4.5], 'k')
+		for j in range(5):
+			plt.plot([0.5, 4.5], [j+0.5, j+0.5], 'k')
+
 		plt.axis('off')
-		plt.show()
+		plt.colorbar()
+		plt.clim(0.0, 28.0)
+		# ims.append([im])
+		# plt.show()
+		if(i > 99):
+			plt.savefig('picfolder/00' + str(i) + '.jpeg')
+		elif(i>9):
+			plt.savefig('picfolder/000' + str(i) + '.jpeg')
+		else:
+			plt.savefig('picfolder/0000' + str(i) + '.jpeg')
+
+
 
 if __name__ == '__main__':
 	main()
