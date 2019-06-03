@@ -6,7 +6,7 @@ Devpost: https://devpost.com/software/felix-ai
 
 
 <p align="center">
-  <img src="https://github.com/timudk/uwEnergyHacks/blob/master/994621.jpg" width="750">
+  <img src="https://github.com/timudk/uwEnergyHacks/blob/master/994621.jpg" width="400">
 
 ## Inspiration
 Large office buildings waste a lot of energy for heating.
