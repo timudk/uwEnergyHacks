@@ -1,5 +1,8 @@
 # uwEnergyHacks
-Github repo for uwEnergyHacks
+Github repo for uwEnergyHacks - *winning submission* for the question: How can we take full advantage of wireless sensors and data analysis to drive energy and operational savings in buildings?
+
+Slides: https://docs.google.com/presentation/d/1ctmmve8ka_wFKQGbE9vX60WmBWdSBtwxaiP7a_-ZuEo/edit#slide=id.g35f391192_00
+Devpost: https://devpost.com/software/felix-ai
 
 ## Inspiration
 Large office buildings waste a lot of energy for heating.
